@@ -9,6 +9,7 @@ spring:
     name: SCHEDULE-SERVICE
   
   datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/backendprojdb 
     username: root
     password: pass123
