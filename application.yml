@@ -17,3 +17,5 @@ spring:
     show-sql: true 
     hibernate: 
       ddl-auto: update
+file:
+  path: C:\\projectDemo\\Excelsheets\\Schedule.xlsx
