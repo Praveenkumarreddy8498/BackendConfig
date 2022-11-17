@@ -15,10 +15,10 @@ spring:
          predicates:
          - Path=/excel/** 
       
-       - id: scheduleService
-         uri: lb://SCHEDULE-SERVICE
-         predicates:
-         - Path=/schedule/**
+#        - id: scheduleService
+#          uri: lb://SCHEDULE-SERVICE
+#          predicates:
+#          - Path=/schedule/**
 management:
   endpoints:
     web:
