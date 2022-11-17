@@ -1,6 +1,9 @@
 server:
   port: 8082
+spring:
   
+  config:
+    import: configserver:http://localhost:8888
 
       
 eureka:
