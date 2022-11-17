@@ -1,0 +1,30 @@
+server:
+  port: 9000
+
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761
+
+spring:
+     
+  cloud:
+    gateway:
+      routes:
+       - id: excelService
+         uri: lb://EXCEL-SERVICE
+         predicates:
+         - Path=/excel/** 
+      
+       - id: scheduleService
+         uri: lb://SCHEDULE-SERVICE
+         predicates:
+         - Path=/schedule/**
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
