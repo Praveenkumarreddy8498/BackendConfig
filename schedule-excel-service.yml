@@ -4,8 +4,7 @@ server:
 spring:
   application:
     name: EXCEL-SERVICE
-  config:
-    import: configserver:http://localhost:8888
+ 
       
 eureka:
   client:
