@@ -1,10 +1,6 @@
 server:
   port: 9000
 
-eureka:
-  client:
-    service-url:
-      default-zone: http://localhost:EUREKA-SERVER
 
 spring:
   cloud:
