@@ -1,5 +1,13 @@
 server:
   port: 8082
-
 file:
   path: C:\\projectDemo\\Excelsheets\\DailySchedule.xlsx
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
+
