@@ -2,10 +2,7 @@ server:
   port: 8082
 
       
-eureka:
-  client:
-    service-url:
-      default-zone: http://localhost:8761
+
 
 file:
   path: C:\\projectDemo\\Excelsheets\\DailySchedule.xlsx
