@@ -1,7 +1,7 @@
 server:
   port: 8082
 file:
-  path: C:\\projectDemo\\Excelsheets\\DailySchedule.xlsx
+  path: C:\\projectDemo\\Excelsheets\\
 management:
   endpoints:
     web:
