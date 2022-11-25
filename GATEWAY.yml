@@ -5,7 +5,8 @@ server:
 spring:
   cloud:
     gateway:
-      
+      default-filters:
+      - TokenRelay
       routes:
        - id: excelService
          uri: lb://EXCEL-SERVICE
