@@ -1,0 +1,22 @@
+server:
+  port: 9000
+
+
+spring:
+  cloud:
+    gateway:
+      
+      routes:
+       - id: busService
+         uri: lb://BUS-SERVICE
+         predicates:
+         - Path=/bus-api/** 
+      
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
