@@ -21,7 +21,7 @@ spring:
       
       routes:
        - id: busService
-         uri: lb://BUS-SERVICE
+         uri: lb://BUS-SERVICE-CUD
          predicates:
          - Path=/bus-api/** 
       
