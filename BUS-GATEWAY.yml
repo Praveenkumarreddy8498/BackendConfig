@@ -24,7 +24,6 @@ spring:
          uri: lb://BUS-SERVICE-CUD
          predicates:
          - Path=/bus-api/** 
-      routes:
        - id: busServiceRetrive
          uri: lb://BUS-SERVICE-RETRIVE
          predicates:
@@ -38,3 +37,4 @@ management:
   endpoint:
     health:
       show-details: always
+
