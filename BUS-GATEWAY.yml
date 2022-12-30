@@ -26,7 +26,7 @@ spring:
          - Path=/bus-api/** 
       routes:
        - id: busServiceRetrive
-         uri: lb://BUS-SERVICE-CUD
+         uri: lb://BUS-SERVICE-RETRIVE
          predicates:
          - Path=/bus-api-retrive/** 
       
