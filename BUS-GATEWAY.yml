@@ -20,10 +20,15 @@ spring:
               allowedHeaders: "*"
       
       routes:
-       - id: busService
+       - id: busServiceCud
          uri: lb://BUS-SERVICE-CUD
          predicates:
          - Path=/bus-api/** 
+      routes:
+       - id: busServiceRetrive
+         uri: lb://BUS-SERVICE-CUD
+         predicates:
+         - Path=/bus-api-retrive/** 
       
 management:
   endpoints:
