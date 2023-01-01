@@ -4,3 +4,11 @@ eureka:
   client:
     service-url:
       default-zone: http://EUREKA-SERVER 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
