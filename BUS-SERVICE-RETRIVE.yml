@@ -1,7 +1,6 @@
 server:
   port: 8082
-url:
-  path: "http://localhost:8983/solr/bus"
+
 eureka:
   client:
     service-url:
