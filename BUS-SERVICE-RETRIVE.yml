@@ -13,3 +13,5 @@ management:
   endpoint:
     health:
       show-details: always
+db:
+  path: http://localhost:8983/solr/bus
