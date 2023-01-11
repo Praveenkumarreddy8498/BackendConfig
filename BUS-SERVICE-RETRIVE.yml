@@ -12,5 +12,11 @@ management:
   endpoint:
     health:
       show-details: always
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri : http://${keycloakServerHost}:${keycloakServerPort}/realms/full-stack
 db:
   path: http://localhost:8983/solr/bus
