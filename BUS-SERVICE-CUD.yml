@@ -5,6 +5,12 @@ eureka:
   client:
     service-url:
       default-zone: http://EUREKA-SERVER 
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri : http://${keycloakServerHost}:${keycloakServerPort}/realms/full-stack 
 management:
   endpoints:
     web:
